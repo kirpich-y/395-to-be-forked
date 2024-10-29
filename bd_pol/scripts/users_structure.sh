@@ -14,12 +14,13 @@ create_user_structure() {
     mkdir -p photos/{2020,2021,2022,2023,2024}
     touch photos/{2020,2021,2022,2023,2024}/default.png
 
+    mkdir -p videos/{2020,2021,2022,2023,2024}
+    touch videos/{2020,2021,2022,2023,2024}/default.mp4
+
 
     echo "Структура пользователя '$username' успешно создана и инициализирована в директории $directory"
 }
 
-# Запрашиваем у пользователя имя пользователя
 read -p "Введите имя пользователя: " username
 
-# Создаем структуру пользователя
 create_user_structure "$username"
