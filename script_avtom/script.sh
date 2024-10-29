@@ -1,4 +1,3 @@
-#!/bin/bash
 
 create_project_structure() {
     local project_name="$1"
@@ -15,21 +14,9 @@ create_project_structure() {
     cat << EOF > "$project_dir/$project_name/README.md"
 
 
-Описание проекта...
 
 
-
-Установите необходимые зависимости:
-
-
-
-
-Проект лицензируется под MIT.
-EOF
-
-    # Создаем файл .gitignore
-    cat << EOF > "$project_dir/$project_name/.gitignore"
-# Временно игнорировать
+cat << EOF > "$project_dir/$project_name/.gitignore"
 .vscode/
 __pycache__/
 *.log
