@@ -17,6 +17,8 @@ create_user_structure() {
     mkdir -p videos/{2020,2021,2022,2023,2024}
     touch videos/{2020,2021,2022,2023,2024}/default.mp4
 
+    mkdir -p documents/{2020,2021,2022,2023,2024}
+    touch documents/{2020,2021,2022,2023,2024}/default.mp4
 
     echo "Структура пользователя '$username' успешно создана и инициализирована в директории $directory"
 }
